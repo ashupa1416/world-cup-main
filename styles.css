@@ -11,6 +11,9 @@ main {
     align-items: center;
 }
 
+/*--------------------------
+        Top-banner
+------------------------- */
 .section-title h1 {
     font-size: 70px;
     color: #FFFFFF;
@@ -24,6 +27,7 @@ p {
     margin-bottom: 35px;
 }
 
+
 .section-title a {
     color: #FFFFFF;
     text-decoration: none;
@@ -33,13 +37,13 @@ p {
     border-radius: 5px;
 }
 
+
 .top-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 85%;
     height: 646px;
-    left: 140px;
-    top: 50px;
+    margin-top: 50px;
     background-color: #161616;
     border-radius: 30px;
 
@@ -58,13 +62,21 @@ p {
     margin-bottom: 0;
 }
 
-.matches {
+/*--------------------------
+        Middle-banner
+------------------------- */
+
+.miidle-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 3fr;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 85%;
+    height: 546px;
 }
 
 .info {
-    width: 312px;
+    width: 290px;
     height: 312px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -79,7 +91,7 @@ p {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #DD0000;
-    margin: 20px 30px 20px 30px;
+    margin: 20px 30px 20px 20px;
     text-align: center;
     padding-top: 20px;
     border-radius: 10px;
@@ -92,32 +104,27 @@ p {
     text-decoration: none;
     color: #161616;
     background-color: #FFFFFF;
-    margin: 0px 30px 15px 30px;
+    margin: 0px 30px 15px 20px;
     text-align: center;
     padding-top: 20px;
     border-radius: 10px;
 }
 
-.flag {
-    display: flex;
-    width: 210px;
-    height: 55px;
-    padding: 40px 20px 20px 20px;
-}
 
-.flag img {
-    margin-bottom: 0px;
+
+
+
+.matches {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .match {
-    box-sizing: border-box;
-    width: 260px;
+    width: 312px;
     height: 242px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    padding-bottom: 0px;
-    border: 1px solid #E8E8E8;
+    margin: 0px 10px 0px 10px;
+    border: 3px solid #E8E8E8;
     border-radius: 10px;
 }
 
@@ -140,17 +147,26 @@ p {
     margin-top: 0px;
 }
 
-.bottom-layer {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin-top: 100px;
-    margin-bottom: 150px;
+.flag {
+    display: flex;
+    width: 210px;
+    height: 55px;
+    padding: 40px 30px 20px 15px;
 }
 
+.flag img {
+    margin-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* =====================
+        Footer 
+=======================*/
 footer {
     background-color: #161616;
-    width: 1600px;
-    height: 444px;
+    width: 100%
 }
 
 footer h1 {
@@ -161,15 +177,12 @@ footer h1 {
 
 hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 70px;
-    margin-bottom: 74px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin: 70px 140px 74px 140px;
 }
 
 .footer-info {
     display: flex;
-    margin-left: 350px;
+    margin-left: 400px;
 }
 
 .footer-info p {
