@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -22,11 +23,38 @@ main {
 
 p {
     font-size: 16px;
-    color: #FFFFFF;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 2px;
     margin-bottom: 35px;
 }
 
+
+.top-container {
+    display: flex;
+    width: 85%;
+    margin-top: 50px;
+    background-color: #161616;
+    border-radius: 30px;
+
+}
+
+#padding {
+    margin-right: 100px;
+}
+
+.section-title {
+    width: 100%;
+    padding-left: 100px;
+}
+
+
+
+.section-title img {
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 100px;
+}
 
 .section-title a {
     color: #FFFFFF;
@@ -35,31 +63,6 @@ p {
     font-size: 20px;
     background-color: #DD0000;
     border-radius: 5px;
-}
-
-
-.top-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 85%;
-    height: 646px;
-    margin-top: 50px;
-    background-color: #161616;
-    border-radius: 30px;
-
-}
-
-.section-title {
-    width: 531px;
-    height: 424px;
-    margin-left: 70px;
-}
-
-.top-player img {
-    width: 581px;
-    height: 613px;
-    margin-top: 33px;
-    margin-bottom: 0;
 }
 
 /*--------------------------
@@ -72,58 +75,50 @@ p {
     margin-top: 100px;
     margin-bottom: 50px;
     width: 85%;
-    height: 546px;
 }
 
 .info {
-    width: 290px;
-    height: 312px;
+    height: 60%;
+    /* height: 312px; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     background-color: #161616;
     border-radius: 10px;
+
 }
 
-.red {
+.info a {
     width: 252px;
     height: 50px;
     font-size: 20px;
     text-decoration: none;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.blue {
     color: #FFFFFF;
-    background-color: #DD0000;
+    background-color: blue;
     margin: 20px 30px 20px 20px;
     text-align: center;
-    padding-top: 20px;
-    border-radius: 10px;
 }
 
-.white {
-    width: 252px;
-    height: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #161616;
-    background-color: #FFFFFF;
+.yellow {
+    color: #FFFFFF;
+    background-color: #f3d515;
     margin: 0px 30px 15px 20px;
     text-align: center;
-    padding-top: 20px;
-    border-radius: 10px;
 }
-
-
-
-
 
 .matches {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .match {
     width: 312px;
     height: 242px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 20px 10px;
     border: 3px solid #E8E8E8;
     border-radius: 10px;
 }
@@ -182,10 +177,118 @@ hr {
 
 .footer-info {
     display: flex;
-    margin-left: 400px;
+    margin-left: 350px;
 }
 
 .footer-info p {
     margin-right: 40px;
     color: #B9B9B9;
+}
+
+.social {
+    display: flex;
+    margin-left: 650px;
+}
+
+a>i {
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+.fa-brands {
+    font-size: 40px;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #fff;
+}
+
+.fa-square-twitter {
+    color: #00acee;
+}
+
+/* i {
+    margin-right: 30px;
+} */
+
+
+
+/*============
+ Media quaries
+ ============ */
+
+/*============
+ Mobile Devices
+ =============*/
+
+@media only screen and (max-width: 688px) {
+
+
+    .top-container {
+        flex-direction: column;
+        margin-top: 28px 0px 0px 0px;
+    }
+
+    .section-title img {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .section-title {
+        width: 50%;
+
+    }
+
+    .section-title h1 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 2px;
+        margin-bottom: 16px;
+    }
+
+    .miidle-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 16px;
+    }
+
+    .info {
+        margin-bottom: 24px;
+        padding-left: 15px;
+    }
+
+    .footer {
+        width: 50%;
+    }
+
+    footer h1 {
+        padding-top: 30px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        margin-left: 40px;
+        align-items: center;
+    }
+
+
+    hr {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 70px 30px 34px 30px;
+    }
+
 }
